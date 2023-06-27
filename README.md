@@ -28,7 +28,11 @@ Also, make sure to copy the Mock URL for later use.
 
 [Import the environment.](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data)
 
-Set the values for the variables serviceUrl, appKey, appToken, accountName and mockServerAddress.
+Set the values for the variables:
+ - serviceUrl: URL of your provider service.
+ - appKey and appToken: credential values that the merchant will configure to authenticate with the provider. They are sent in all requests as X-PROVIDER-API-AppKey and X-PROVIDER-API-AppToken headers.
+ - accountName: the name of the VTEX account that will be processing payments with this anti-fraud provider.
+ - mockServerAddress: the Mock URL copied in the previous step.
 
 
 ## Running the Tests
